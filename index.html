@@ -274,14 +274,20 @@
                   <li data-i18n="svc.web.b2">Formularios reactivos, Angular Material y consumo de APIs REST.</li>
                   <li data-i18n="svc.web.b3">Landing pages cuidadas en móvil, jerarquía visual y rendimiento.</li>
                 </ul>
-                <figure class="terminal">
-                  <figcaption class="term-bar">
-                    <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
-                    <span data-i18n="svc.web.file">orders.component.ts</span>
-                  </figcaption>
-                  <pre><code><span class="line"><span class="at">@Component</span>({</span><span class="line">  selector: <span class="st">'app-orders'</span>,</span><span class="line">  templateUrl: <span class="st">'./orders.component.html'</span></span><span class="line">})</span><span class="line"><span class="kw">export class</span> <span class="ty">OrdersComponent</span> {</span><span class="line">  <span class="kw">readonly</span> orders$ = <span class="kw">this</span>.api.<span class="fn">list</span>().pipe(</span><span class="line">    <span class="fn">shareReplay</span>(<span class="nu">1</span>)</span><span class="line">  );</span><span class="line"></span><span class="line">  <span class="kw">constructor</span>(<span class="kw">private readonly</span> api: <span class="ty">OrdersApi</span>) {}</span><span class="line">}</span></code></pre>
+                <figure class="viz viz-web">
+                  <div class="browser" aria-hidden="true">
+                    <div class="browser-bar">
+                      <span class="dots"><i></i><i></i><i></i></span>
+                      <span class="url" data-i18n="viz.web.url">landing</span>
+                    </div>
+                    <div class="wire">
+                      <div class="w-nav"><span></span><span></span><b></b></div>
+                      <div class="w-hero"><span></span><span></span><b></b></div>
+                      <div class="w-cards"><i></i><i></i><i></i></div>
+                    </div>
+                  </div>
+                  <figcaption class="caption" data-i18n="svc.web.caption">La página se arma por capas: navegación, titular y bloques.</figcaption>
                 </figure>
-                <p class="caption" data-i18n="svc.web.caption">Ejemplo ilustrativo del tipo de código que escribo.</p>
               </article>
 
               <article class="svc-panel panel-api">
@@ -292,14 +298,18 @@
                   <li data-i18n="svc.api.b2">JWT y ASP.NET Identity para autenticación y roles.</li>
                   <li data-i18n="svc.api.b3">Entity Framework Core como capa de acceso a datos.</li>
                 </ul>
-                <figure class="terminal">
-                  <figcaption class="term-bar">
-                    <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
-                    <span data-i18n="svc.api.file">OrdersController.cs</span>
-                  </figcaption>
-                  <pre><code><span class="line"><span class="at">[ApiController]</span></span><span class="line"><span class="at">[Route(</span><span class="st">"api/orders"</span><span class="at">)]</span></span><span class="line"><span class="kw">public class</span> <span class="ty">OrdersController</span> : <span class="ty">ControllerBase</span></span><span class="line">{</span><span class="line">    <span class="at">[Authorize]</span></span><span class="line">    <span class="at">[HttpPost]</span></span><span class="line">    <span class="kw">public async</span> <span class="ty">Task</span>&lt;<span class="ty">ActionResult</span>&lt;<span class="ty">OrderDto</span>&gt;&gt; <span class="fn">Create</span>(</span><span class="line">        <span class="ty">CreateOrderRequest</span> request)</span><span class="line">    {</span><span class="line">        <span class="kw">var</span> order = <span class="kw">await</span> _orders.<span class="fn">CreateAsync</span>(request, UserId);</span><span class="line">        <span class="kw">return</span> <span class="fn">CreatedAtAction</span>(<span class="kw">nameof</span>(Get), <span class="kw">new</span> { order.Id }, order);</span><span class="line">    }</span><span class="line">}</span></code></pre>
+                <figure class="viz viz-api">
+                  <div class="flow" aria-hidden="true">
+                    <div class="flow-track"></div>
+                    <span class="packet packet-req"></span>
+                    <span class="packet packet-res"></span>
+                    <div class="flow-node"><small>01</small><span data-i18n="viz.api.app">App</span></div>
+                    <div class="flow-node"><small>02</small><span>API</span></div>
+                    <div class="flow-node"><small>03</small><span>Auth</span></div>
+                    <div class="flow-node"><small>04</small><span data-i18n="viz.api.data">Datos</span></div>
+                  </div>
+                  <figcaption class="caption" data-i18n="svc.api.caption">La petición pasa por la API, la autenticación y los datos.</figcaption>
                 </figure>
-                <p class="caption" data-i18n="svc.api.caption">Ejemplo ilustrativo del tipo de código que escribo.</p>
               </article>
 
               <article class="svc-panel panel-data">
@@ -310,14 +320,27 @@
                   <li data-i18n="svc.data.b2">Índices y optimización de consultas.</li>
                   <li data-i18n="svc.data.b3">Aprovisionamiento de bases, backup y restore.</li>
                 </ul>
-                <figure class="terminal">
-                  <figcaption class="term-bar">
-                    <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
-                    <span data-i18n="svc.data.file">indexes.sql</span>
-                  </figcaption>
-                  <pre><code><span class="line"><span class="kw">CREATE INDEX</span> IX_Orders_Customer_Status</span><span class="line">    <span class="kw">ON</span> dbo.Orders (CustomerId, Status)</span><span class="line">    <span class="kw">INCLUDE</span> (Total, CreatedAt)</span><span class="line">    <span class="kw">WHERE</span> Status &lt;&gt; <span class="st">'Cancelled'</span>;</span><span class="line"></span><span class="line"><span class="kw">CREATE OR ALTER PROCEDURE</span> dbo.usp_GetOpenOrders</span><span class="line">    @CustomerId <span class="ty">int</span></span><span class="line"><span class="kw">AS</span></span><span class="line"><span class="kw">BEGIN</span></span><span class="line">    <span class="kw">SET NOCOUNT ON</span>;</span><span class="line">    <span class="kw">SELECT</span> Id, Total, CreatedAt</span><span class="line">    <span class="kw">FROM</span> dbo.Orders</span><span class="line">    <span class="kw">WHERE</span> CustomerId = @CustomerId</span><span class="line">      <span class="kw">AND</span> Status = <span class="st">'Open'</span>;</span><span class="line"><span class="kw">END</span></span></code></pre>
+                <figure class="viz viz-data">
+                  <div class="schema" aria-hidden="true">
+                    <svg class="schema-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                      <path class="rel" d="M40 30 C 58 30, 58 24, 64 24"></path>
+                      <path class="rel rel-b" d="M40 38 C 52 62, 58 72, 64 76"></path>
+                    </svg>
+                    <article class="tbl tbl-a">
+                      <h4 data-i18n="viz.user">Usuario</h4>
+                      <i class="pk"></i><i></i><i></i>
+                    </article>
+                    <article class="tbl tbl-b">
+                      <h4 data-i18n="viz.role">Rol</h4>
+                      <i class="pk"></i><i></i>
+                    </article>
+                    <article class="tbl tbl-c">
+                      <h4 data-i18n="viz.session">Sesión</h4>
+                      <i class="pk"></i><i></i><i></i>
+                    </article>
+                  </div>
+                  <figcaption class="caption" data-i18n="svc.data.caption">Tablas, claves y relaciones del modelo.</figcaption>
                 </figure>
-                <p class="caption" data-i18n="svc.data.caption">Ejemplo ilustrativo del tipo de SQL que escribo.</p>
               </article>
 
               <article class="svc-panel panel-mobile">
@@ -328,14 +351,18 @@
                   <li data-i18n="svc.mobile.b2">La misma autenticación y los mismos recursos que la web.</li>
                   <li data-i18n="svc.mobile.b3">Un solo código para iOS y Android.</li>
                 </ul>
-                <figure class="terminal">
-                  <figcaption class="term-bar">
-                    <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
-                    <span data-i18n="svc.mobile.file">order_card.dart</span>
-                  </figcaption>
-                  <pre><code><span class="line"><span class="kw">class</span> <span class="ty">OrderCard</span> <span class="kw">extends</span> <span class="ty">StatelessWidget</span> {</span><span class="line">  <span class="kw">const</span> <span class="fn">OrderCard</span>({<span class="kw">super</span>.key, <span class="kw">required this</span>.order});</span><span class="line"></span><span class="line">  <span class="kw">final</span> <span class="ty">Order</span> order;</span><span class="line"></span><span class="line">  <span class="at">@override</span></span><span class="line">  Widget <span class="fn">build</span>(BuildContext context) {</span><span class="line">    <span class="kw">return</span> <span class="fn">Card</span>(</span><span class="line">      child: <span class="fn">ListTile</span>(</span><span class="line">        title: <span class="fn">Text</span>(order.title),</span><span class="line">        trailing: <span class="fn">Text</span>(order.total),</span><span class="line">      ),</span><span class="line">    );</span><span class="line">  }</span><span class="line">}</span></code></pre>
+                <figure class="viz viz-mobile">
+                  <div class="phone" aria-hidden="true">
+                    <div class="phone-screen">
+                      <div class="ph-notch"></div>
+                      <div class="ph-head"><span></span><b></b></div>
+                      <div class="ph-card"><span></span><span></span></div>
+                      <div class="ph-card"><span></span><span></span></div>
+                      <div class="ph-nav"><i></i><i></i><i></i></div>
+                    </div>
+                  </div>
+                  <figcaption class="caption" data-i18n="svc.mobile.caption">La misma interfaz, en un teléfono.</figcaption>
                 </figure>
-                <p class="caption" data-i18n="svc.mobile.caption">Ejemplo ilustrativo del tipo de código que escribo.</p>
               </article>
             </div>
           </div>
