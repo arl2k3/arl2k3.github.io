@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harryson Montesdeoca — Desarrollador Full Stack | .NET · Angular · Flutter</title>
+  <meta name="description" content="Desarrollador full stack en Quito. APIs con ASP.NET Core, interfaces en Angular, SQL Server y apps móviles en Flutter. Abierto a freelance remoto y roles full-time.">
+  <meta name="author" content="Harryson Montesdeoca">
+  <meta name="theme-color" content="#090a0c">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://arl2k3.github.io/">
+  <link rel="alternate" hreflang="es" href="https://arl2k3.github.io/">
+  <link rel="alternate" hreflang="en" href="https://arl2k3.github.io/?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://arl2k3.github.io/">
+  <link rel="me" href="https://github.com/arl2k3">
+  <link rel="me" href="https://www.linkedin.com/in/harryson-montesdeoca">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_EC">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:site_name" content="Harryson Montesdeoca">
+  <meta property="og:url" content="https://arl2k3.github.io/">
+  <meta property="og:title" content="Harryson Montesdeoca — Desarrollador Full Stack | .NET · Angular · Flutter">
+  <meta property="og:description" content="Desarrollador full stack en Quito. APIs con ASP.NET Core, interfaces en Angular, SQL Server y apps móviles en Flutter. Abierto a freelance remoto y roles full-time.">
+  <meta property="og:image" content="https://arl2k3.github.io/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Harryson Montesdeoca, Full Stack Developer — .NET · Angular · Flutter">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Harryson Montesdeoca — Desarrollador Full Stack | .NET · Angular · Flutter">
+  <meta name="twitter:description" content="Desarrollador full stack en Quito. APIs con ASP.NET Core, interfaces en Angular, SQL Server y apps móviles en Flutter.">
+  <meta name="twitter:image" content="https://arl2k3.github.io/assets/og.png">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preload" href="/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/instrument-serif-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Harryson Ariel Montesdeoca Rhea",
+    "alternateName": "Harryson Montesdeoca",
+    "jobTitle": "Full Stack Developer",
+    "email": "mailto:harryson.arl2k3@gmail.com",
+    "url": "https://arl2k3.github.io/",
+    "image": "https://arl2k3.github.io/assets/og.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Quito",
+      "addressCountry": "EC"
+    },
+    "knowsLanguage": ["es", "en"],
+    "knowsAbout": ["ASP.NET Core", "C#", "Angular", "TypeScript", "SQL Server", "Flutter", "Entity Framework Core"],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Escuela Politécnica Nacional",
+      "url": "https://www.epn.edu.ec"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "SAGAT Systems S.A.S."
+    },
+    "sameAs": [
+      "https://github.com/arl2k3",
+      "https://www.linkedin.com/in/harryson-montesdeoca"
+    ]
+  }
+  </script>
+  <script>
+    document.documentElement.classList.add("js");
+  </script>
+</head>
+<body id="top">
+  <a class="skip" href="#contenido" data-i18n="nav.skip">Saltar al contenido</a>
+
+  <header class="nav" data-nav>
+    <a class="logo" href="#top">
+      <span class="logo-mark" aria-hidden="true">HM</span>
+      <span class="logo-name">Montesdeoca</span>
+    </a>
+    <nav id="nav-menu" class="nav-links" aria-label="Secciones" data-i18n-aria="nav.sections">
+      <a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
+      <a href="#servicios" data-i18n="nav.services">Servicios</a>
+      <a href="#stack" data-i18n="nav.stack">Stack</a>
+      <a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
+      <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+    </nav>
+    <div class="nav-tools">
+      <div class="lang" role="group" aria-label="Idioma" data-i18n-aria="nav.lang">
+        <button type="button" class="lang-btn" data-lang="es" aria-pressed="true">ES</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn btn-primary btn-small nav-cta" href="#contacto" data-i18n="nav.cta">Contacto</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú" data-i18n-aria="nav.open">
+        <span class="burger" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <canvas id="field"></canvas>
+      </div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="status">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <span data-i18n="hero.eyebrow">Quito, Ecuador · Abierto a oportunidades remotas</span>
+          </p>
+          <h1 id="hero-title">
+            <span class="name">Harryson<br><span class="name-last">Montesdeoca</span></span>
+            <span class="role-wrap"><span class="role" lang="en">Full Stack Developer — .NET · Angular · Flutter</span></span>
+          </h1>
+          <p class="lead" data-i18n="hero.lead">Construyo el sistema completo: interfaces en Angular, APIs en ASP.NET Core, datos en SQL Server y apps móviles en Flutter.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacto">
+              <span data-i18n="hero.primary">Hablemos</span>
+              <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10h12M11 5l5 5-5 5"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="/cv/Harryson-Montesdeoca-CV.pdf" download="Harryson-Montesdeoca-CV.pdf">
+              <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M10 3v10M6 9l4 4 4-4M4 16h12"/></svg>
+              <span data-i18n="hero.secondary">Descargar CV</span>
+            </a>
+          </div>
+        </div>
+
+        <aside class="system" aria-labelledby="system-title">
+          <p class="system-kicker" id="system-title" data-i18n="hero.system">Un producto, cuatro capas</p>
+          <div class="system-map">
+            <div class="node node-web">
+              <span class="node-k">01</span>
+              <strong>Angular</strong>
+              <em data-i18n="hero.node.web">Web y landing pages</em>
+            </div>
+            <div class="node node-mobile">
+              <span class="node-k">04</span>
+              <strong>Flutter</strong>
+              <em data-i18n="hero.node.mobile">Apps multiplataforma</em>
+            </div>
+            <div class="join" aria-hidden="true"></div>
+            <div class="node node-api">
+              <span class="node-k">02</span>
+              <strong>ASP.NET Core</strong>
+              <em data-i18n="hero.node.api">APIs y reglas de negocio</em>
+            </div>
+            <div class="join" aria-hidden="true"></div>
+            <div class="node node-db">
+              <span class="node-k">03</span>
+              <strong>SQL Server</strong>
+              <em data-i18n="hero.node.db">Datos y consultas</em>
+            </div>
+          </div>
+          <p class="system-foot" data-i18n="hero.systemFoot">JWT · EF Core · IIS · Scrum</p>
+        </aside>
+      </div>
+      <p class="scroll-hint"><span data-i18n="hero.scroll">Desplázate</span><span aria-hidden="true"></span></p>
+    </section>
+
+    <div class="band" aria-hidden="true">
+      <div class="marquee">
+        <div class="marquee-track">
+          <p class="marquee-seq">
+            <span>C#</span><span>ASP.NET Core</span><span>.NET 8</span><span>Entity Framework</span><span>Angular</span><span>TypeScript</span><span>RxJS</span><span>Angular Material</span><span>SQL Server</span><span>Flutter</span><span>JWT</span><span>IIS</span><span>Git</span><span>Scrum</span>
+          </p>
+          <p class="marquee-seq">
+            <span>C#</span><span>ASP.NET Core</span><span>.NET 8</span><span>Entity Framework</span><span>Angular</span><span>TypeScript</span><span>RxJS</span><span>Angular Material</span><span>SQL Server</span><span>Flutter</span><span>JWT</span><span>IIS</span><span>Git</span><span>Scrum</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="section" id="sobre-mi">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span>01</span> <span data-i18n="about.eyebrow">Sobre mí</span></p>
+          <h2 data-i18n="about.title">Software con usuarios reales, de la pantalla a la base de datos.</h2>
+        </header>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="pull" data-i18n="about.pull">Diseño, construyo y mantengo aplicaciones que ya están en uso.</p>
+            <p data-i18n="about.p1">Soy desarrollador full stack en SAGAT Systems, en Quito. En el backend trabajo con C#, ASP.NET Core (.NET 8) y Entity Framework Core. En el frontend, con Angular 14+, TypeScript, RxJS y Angular Material. En móvil, con Flutter.</p>
+            <p data-i18n="about.p2">También administro SQL Server: procedimientos almacenados, triggers, vistas, índices y el aprovisionamiento de bases nuevas. Despliego en IIS, uso Git a diario y trabajo en Scrum. Si algo falla en producción, lo reviso y lo dejo estable.</p>
+            <p data-i18n="about.p3">Estudio Ingeniería en Software en la Escuela Politécnica Nacional, octavo semestre. Español nativo e inglés C1. Además he trabajado con Java Spring Boot, Python y Node.js.</p>
+          </div>
+          <dl class="facts reveal" style="--d: 80ms">
+            <div>
+              <dt data-i18n="about.role.k">Rol</dt>
+              <dd data-i18n="about.role.v">Full Stack Developer</dd>
+            </div>
+            <div>
+              <dt data-i18n="about.co.k">Empresa</dt>
+              <dd data-i18n="about.co.v">SAGAT Systems S.A.S.</dd>
+            </div>
+            <div>
+              <dt data-i18n="about.base.k">Base</dt>
+              <dd data-i18n="about.base.v">Quito, Ecuador</dd>
+            </div>
+            <div>
+              <dt data-i18n="about.lang.k">Idiomas</dt>
+              <dd data-i18n="about.lang.v">Español nativo · Inglés C1</dd>
+            </div>
+            <div>
+              <dt data-i18n="about.edu.k">Formación</dt>
+              <dd data-i18n="about.edu.v">Ing. en Software · EPN</dd>
+            </div>
+            <div>
+              <dt data-i18n="about.open.k">Abierto a</dt>
+              <dd data-i18n="about.open.v">Freelance remoto y full-time remoto</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicios">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span>02</span> <span data-i18n="svc.eyebrow">Servicios</span></p>
+          <h2 data-i18n="svc.title">Qué construyo</h2>
+          <p class="lede" data-i18n="svc.lede">Cuatro frentes en los que puedo entrar a un producto y dejar la web, la API, los datos y el móvil hablando el mismo idioma.</p>
+        </header>
+
+        <div class="svc reveal">
+          <input class="svc-input" type="radio" name="service" id="svc-web" checked>
+          <input class="svc-input" type="radio" name="service" id="svc-api">
+          <input class="svc-input" type="radio" name="service" id="svc-data">
+          <input class="svc-input" type="radio" name="service" id="svc-mobile">
+          <div class="svc-layout">
+            <div class="svc-tabs" role="presentation">
+              <label class="svc-tab tab-web" for="svc-web">
+                <span class="idx">01</span>
+                <span>
+                  <span class="kicker" data-i18n="svc.web.kicker">Frontend</span>
+                  <span class="name" data-i18n="svc.web.title">Web y landing pages</span>
+                </span>
+              </label>
+              <label class="svc-tab tab-api" for="svc-api">
+                <span class="idx">02</span>
+                <span>
+                  <span class="kicker" data-i18n="svc.api.kicker">Backend</span>
+                  <span class="name" data-i18n="svc.api.title">APIs y backend</span>
+                </span>
+              </label>
+              <label class="svc-tab tab-data" for="svc-data">
+                <span class="idx">03</span>
+                <span>
+                  <span class="kicker" data-i18n="svc.data.kicker">Datos</span>
+                  <span class="name" data-i18n="svc.data.title">Bases de datos</span>
+                </span>
+              </label>
+              <label class="svc-tab tab-mobile" for="svc-mobile">
+                <span class="idx">04</span>
+                <span>
+                  <span class="kicker" data-i18n="svc.mobile.kicker">Móvil</span>
+                  <span class="name" data-i18n="svc.mobile.title">Apps móviles</span>
+                </span>
+              </label>
+            </div>
+
+            <div class="svc-panels">
+              <article class="svc-panel panel-web">
+                <h3 data-i18n="svc.web.title">Web y landing pages</h3>
+                <p data-i18n="svc.web.body">Interfaces de producto y páginas de aterrizaje. En el trabajo diario es Angular. Cuando hace falta presentar algo con claridad y velocidad, también HTML, CSS y JavaScript.</p>
+                <ul>
+                  <li data-i18n="svc.web.b1">Angular 14+, TypeScript y manejo de estado con RxJS.</li>
+                  <li data-i18n="svc.web.b2">Formularios reactivos, Angular Material y consumo de APIs REST.</li>
+                  <li data-i18n="svc.web.b3">Landing pages cuidadas en móvil, jerarquía visual y rendimiento.</li>
+                </ul>
+                <figure class="terminal">
+                  <figcaption class="term-bar">
+                    <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                    <span data-i18n="svc.web.file">orders.component.ts</span>
+                  </figcaption>
+                  <pre><code><span class="line"><span class="at">@Component</span>({</span><span class="line">  selector: <span class="st">'app-orders'</span>,</span><span class="line">  templateUrl: <span class="st">'./orders.component.html'</span></span><span class="line">})</span><span class="line"><span class="kw">export class</span> <span class="ty">OrdersComponent</span> {</span><span class="line">  <span class="kw">readonly</span> orders$ = <span class="kw">this</span>.api.<span class="fn">list</span>().pipe(</span><span class="line">    <span class="fn">shareReplay</span>(<span class="nu">1</span>)</span><span class="line">  );</span><span class="line"></span><span class="line">  <span class="kw">constructor</span>(<span class="kw">private readonly</span> api: <span class="ty">OrdersApi</span>) {}</span><span class="line">}</span></code></pre>
+                </figure>
+                <p class="caption" data-i18n="svc.web.caption">Ejemplo ilustrativo del tipo de código que escribo.</p>
+              </article>
+
+              <article class="svc-panel panel-api">
+                <h3 data-i18n="svc.api.title">APIs y backend</h3>
+                <p data-i18n="svc.api.body">APIs REST que la web y el móvil pueden compartir. Autenticación, autorización y un acceso a datos que se puede seguir manteniendo.</p>
+                <ul>
+                  <li data-i18n="svc.api.b1">ASP.NET Core sobre .NET 8, con contratos REST claros.</li>
+                  <li data-i18n="svc.api.b2">JWT y ASP.NET Identity para autenticación y roles.</li>
+                  <li data-i18n="svc.api.b3">Entity Framework Core como capa de acceso a datos.</li>
+                </ul>
+                <figure class="terminal">
+                  <figcaption class="term-bar">
+                    <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                    <span data-i18n="svc.api.file">OrdersController.cs</span>
+                  </figcaption>
+                  <pre><code><span class="line"><span class="at">[ApiController]</span></span><span class="line"><span class="at">[Route(</span><span class="st">"api/orders"</span><span class="at">)]</span></span><span class="line"><span class="kw">public class</span> <span class="ty">OrdersController</span> : <span class="ty">ControllerBase</span></span><span class="line">{</span><span class="line">    <span class="at">[Authorize]</span></span><span class="line">    <span class="at">[HttpPost]</span></span><span class="line">    <span class="kw">public async</span> <span class="ty">Task</span>&lt;<span class="ty">ActionResult</span>&lt;<span class="ty">OrderDto</span>&gt;&gt; <span class="fn">Create</span>(</span><span class="line">        <span class="ty">CreateOrderRequest</span> request)</span><span class="line">    {</span><span class="line">        <span class="kw">var</span> order = <span class="kw">await</span> _orders.<span class="fn">CreateAsync</span>(request, UserId);</span><span class="line">        <span class="kw">return</span> <span class="fn">CreatedAtAction</span>(<span class="kw">nameof</span>(Get), <span class="kw">new</span> { order.Id }, order);</span><span class="line">    }</span><span class="line">}</span></code></pre>
+                </figure>
+                <p class="caption" data-i18n="svc.api.caption">Ejemplo ilustrativo del tipo de código que escribo.</p>
+              </article>
+
+              <article class="svc-panel panel-data">
+                <h3 data-i18n="svc.data.title">Bases de datos</h3>
+                <p data-i18n="svc.data.body">SQL Server entra en el diseño, no al final. Modelo, consultas, índices y la operación del día a día: respaldos, restauración y bases nuevas.</p>
+                <ul>
+                  <li data-i18n="svc.data.b1">Procedimientos almacenados, vistas y triggers.</li>
+                  <li data-i18n="svc.data.b2">Índices y optimización de consultas.</li>
+                  <li data-i18n="svc.data.b3">Aprovisionamiento de bases, backup y restore.</li>
+                </ul>
+                <figure class="terminal">
+                  <figcaption class="term-bar">
+                    <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                    <span data-i18n="svc.data.file">indexes.sql</span>
+                  </figcaption>
+                  <pre><code><span class="line"><span class="kw">CREATE INDEX</span> IX_Orders_Customer_Status</span><span class="line">    <span class="kw">ON</span> dbo.Orders (CustomerId, Status)</span><span class="line">    <span class="kw">INCLUDE</span> (Total, CreatedAt)</span><span class="line">    <span class="kw">WHERE</span> Status &lt;&gt; <span class="st">'Cancelled'</span>;</span><span class="line"></span><span class="line"><span class="kw">CREATE OR ALTER PROCEDURE</span> dbo.usp_GetOpenOrders</span><span class="line">    @CustomerId <span class="ty">int</span></span><span class="line"><span class="kw">AS</span></span><span class="line"><span class="kw">BEGIN</span></span><span class="line">    <span class="kw">SET NOCOUNT ON</span>;</span><span class="line">    <span class="kw">SELECT</span> Id, Total, CreatedAt</span><span class="line">    <span class="kw">FROM</span> dbo.Orders</span><span class="line">    <span class="kw">WHERE</span> CustomerId = @CustomerId</span><span class="line">      <span class="kw">AND</span> Status = <span class="st">'Open'</span>;</span><span class="line"><span class="kw">END</span></span></code></pre>
+                </figure>
+                <p class="caption" data-i18n="svc.data.caption">Ejemplo ilustrativo del tipo de SQL que escribo.</p>
+              </article>
+
+              <article class="svc-panel panel-mobile">
+                <h3 data-i18n="svc.mobile.title">Apps móviles</h3>
+                <p data-i18n="svc.mobile.body">Aplicaciones multiplataforma en Flutter, apoyadas en las mismas APIs que usa la web. Una base de código para iOS y Android.</p>
+                <ul>
+                  <li data-i18n="svc.mobile.b1">Interfaces en Flutter conectadas a APIs REST.</li>
+                  <li data-i18n="svc.mobile.b2">La misma autenticación y los mismos recursos que la web.</li>
+                  <li data-i18n="svc.mobile.b3">Un solo código para iOS y Android.</li>
+                </ul>
+                <figure class="terminal">
+                  <figcaption class="term-bar">
+                    <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                    <span data-i18n="svc.mobile.file">order_card.dart</span>
+                  </figcaption>
+                  <pre><code><span class="line"><span class="kw">class</span> <span class="ty">OrderCard</span> <span class="kw">extends</span> <span class="ty">StatelessWidget</span> {</span><span class="line">  <span class="kw">const</span> <span class="fn">OrderCard</span>({<span class="kw">super</span>.key, <span class="kw">required this</span>.order});</span><span class="line"></span><span class="line">  <span class="kw">final</span> <span class="ty">Order</span> order;</span><span class="line"></span><span class="line">  <span class="at">@override</span></span><span class="line">  Widget <span class="fn">build</span>(BuildContext context) {</span><span class="line">    <span class="kw">return</span> <span class="fn">Card</span>(</span><span class="line">      child: <span class="fn">ListTile</span>(</span><span class="line">        title: <span class="fn">Text</span>(order.title),</span><span class="line">        trailing: <span class="fn">Text</span>(order.total),</span><span class="line">      ),</span><span class="line">    );</span><span class="line">  }</span><span class="line">}</span></code></pre>
+                </figure>
+                <p class="caption" data-i18n="svc.mobile.caption">Ejemplo ilustrativo del tipo de código que escribo.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="proceso">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span>03</span> <span data-i18n="proc.eyebrow">Proceso</span></p>
+          <h2 data-i18n="proc.title">Cómo trabajo</h2>
+          <p class="lede" data-i18n="proc.lede">Ciclos cortos, con algo que se puede revisar en cada vuelta. Así es como llevo un encargo de la conversación a producción.</p>
+        </header>
+        <ol class="process-grid">
+          <li class="step reveal">
+            <span class="step-num">01</span>
+            <h3 data-i18n="proc.1.t">Alcance</h3>
+            <p data-i18n="proc.1.d">El problema, quién lo usa y qué tiene que quedar resuelto en esta entrega.</p>
+          </li>
+          <li class="step reveal" style="--d: 70ms">
+            <span class="step-num">02</span>
+            <h3 data-i18n="proc.2.t">Diseño</h3>
+            <p data-i18n="proc.2.d">Modelo de datos y endpoints antes de abrir demasiados frentes a la vez.</p>
+          </li>
+          <li class="step reveal" style="--d: 140ms">
+            <span class="step-num">03</span>
+            <h3 data-i18n="proc.3.t">Iteración</h3>
+            <p data-i18n="proc.3.d">Ciclos cortos con Git y Scrum, y software que ya se puede usar.</p>
+          </li>
+          <li class="step reveal" style="--d: 210ms">
+            <span class="step-num">04</span>
+            <h3 data-i18n="proc.4.t">Producción</h3>
+            <p data-i18n="proc.4.d">Despliegue en IIS, incidencias reales y un sistema que sigue operando.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="stack">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span>04</span> <span data-i18n="stack.eyebrow">Stack</span></p>
+          <h2 data-i18n="stack.title">Herramientas del trabajo diario</h2>
+          <p class="lede" data-i18n="stack.lede">El núcleo es .NET, Angular, SQL Server y Flutter. Al lado, lenguajes con los que también he construido.</p>
+        </header>
+        <div class="stack-groups">
+          <div class="stack-group reveal">
+            <h3 data-i18n="stack.backend">Backend</h3>
+            <ul class="chips">
+              <li>C#</li>
+              <li>ASP.NET Core</li>
+              <li>.NET 8</li>
+              <li>Entity Framework Core</li>
+              <li>ASP.NET Identity</li>
+              <li>JWT</li>
+              <li>REST</li>
+            </ul>
+          </div>
+          <div class="stack-group reveal">
+            <h3 data-i18n="stack.frontend">Frontend</h3>
+            <ul class="chips">
+              <li>Angular</li>
+              <li>TypeScript</li>
+              <li>RxJS</li>
+              <li>Angular Material</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+            </ul>
+          </div>
+          <div class="stack-group reveal">
+            <h3 data-i18n="stack.data">Bases de datos</h3>
+            <ul class="chips">
+              <li>SQL Server</li>
+              <li data-i18n="stack.sp">Procedimientos almacenados</li>
+              <li data-i18n="stack.views">Vistas</li>
+              <li>Triggers</li>
+              <li data-i18n="stack.idx">Índices</li>
+              <li data-i18n="stack.opt">Optimización de consultas</li>
+              <li data-i18n="stack.bak">Backup y restore</li>
+            </ul>
+          </div>
+          <div class="stack-group reveal">
+            <h3 data-i18n="stack.mobile">Móvil</h3>
+            <ul class="chips">
+              <li>Flutter</li>
+            </ul>
+          </div>
+          <div class="stack-group reveal">
+            <h3 data-i18n="stack.delivery">Entrega</h3>
+            <ul class="chips">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>IIS</li>
+              <li data-i18n="stack.docker">Docker · básico</li>
+              <li>Scrum</li>
+            </ul>
+          </div>
+          <div class="stack-group reveal">
+            <h3 data-i18n="stack.also">También</h3>
+            <p class="note" data-i18n="stack.alsoNote">Experiencia adicional. No es el núcleo de mi trabajo actual.</p>
+            <ul class="chips">
+              <li>Java Spring Boot</li>
+              <li>Python</li>
+              <li>Node.js</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experiencia">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span>05</span> <span data-i18n="exp.eyebrow">Experiencia</span></p>
+          <h2 data-i18n="exp.title">Dónde trabajo</h2>
+        </header>
+        <ol class="timeline">
+          <li class="reveal">
+            <div class="when">
+              <time datetime="2025-08" data-i18n="exp.date">Ago 2025 — Actualidad</time>
+              <span class="pill" data-i18n="exp.now">Actualidad</span>
+            </div>
+            <article class="job">
+              <h3 data-i18n="exp.role">Desarrollador Full Stack</h3>
+              <p class="where" data-i18n="exp.where">SAGAT Systems S.A.S. · Quito, Ecuador</p>
+              <ul>
+                <li data-i18n="exp.b1">APIs REST en ASP.NET Core (.NET 8), consumidas por aplicaciones web y móviles.</li>
+                <li data-i18n="exp.b2">Acceso a datos con Entity Framework Core. Autenticación y autorización con ASP.NET Identity y JWT.</li>
+                <li data-i18n="exp.b3">Frontend en Angular 14+: formularios reactivos, RxJS y Angular Material.</li>
+                <li data-i18n="exp.b4">Aplicaciones móviles multiplataforma con Flutter.</li>
+                <li data-i18n="exp.b5">SQL Server: procedimientos almacenados, triggers, vistas, índices, optimización de consultas y aprovisionamiento de bases.</li>
+                <li data-i18n="exp.b6">Despliegue en IIS y Application Pools, soporte a sistemas en producción, Git, GitHub y Scrum.</li>
+              </ul>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="formacion">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span>06</span> <span data-i18n="edu.eyebrow">Formación</span></p>
+          <h2 data-i18n="edu.title">Estudios e idiomas</h2>
+        </header>
+        <div class="edu-grid">
+          <article class="card reveal">
+            <p class="eyebrow" data-i18n="edu.kicker">En curso</p>
+            <h3 data-i18n="edu.degree">Ingeniería en Software</h3>
+            <p class="school">
+              <a href="https://www.epn.edu.ec" target="_blank" rel="noopener noreferrer" data-i18n="edu.school" data-i18n-aria="contact.schoolAria">Escuela Politécnica Nacional</a>
+            </p>
+            <p class="status-line" data-i18n="edu.status">Octavo semestre · en curso</p>
+          </article>
+          <article class="card reveal" style="--d: 80ms">
+            <p class="eyebrow" data-i18n="edu.langTitle">Idiomas</p>
+            <ul class="lang-lines">
+              <li><span data-i18n="edu.es">Español</span> <b data-i18n="edu.esk">Nativo</b></li>
+              <li><span data-i18n="edu.en">Inglés</span> <b data-i18n="edu.enk">C1</b></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacto">
+      <div class="wrap">
+        <div class="contact-panel reveal">
+          <p class="eyebrow"><span>07</span> <span data-i18n="contact.eyebrow">Contacto</span></p>
+          <h2 data-i18n="contact.title">Si el producto necesita las cuatro capas, escríbeme.</h2>
+          <p class="lede" data-i18n="contact.lede">Freelance remoto o un rol full-time remoto. La forma más directa es el correo.</p>
+          <div class="contact-email">
+            <a class="email" href="mailto:harryson.arl2k3@gmail.com">harryson.arl2k3@gmail.com</a>
+            <button type="button" class="btn btn-ghost btn-small" data-copy="harryson.arl2k3@gmail.com">
+              <span data-i18n="contact.copy" aria-live="polite">Copiar correo</span>
+            </button>
+          </div>
+          <div class="contact-links">
+            <a class="btn btn-ghost" href="https://github.com/arl2k3" target="_blank" rel="noopener noreferrer" data-i18n-aria="contact.githubAria" aria-label="GitHub, se abre en una pestaña nueva">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12.3c0 5.2 3.4 9.6 8.1 11.2.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.9 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.7 5.6-5.3 5.9.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6 4.7-1.6 8.1-6 8.1-11.2A11.5 11.5 0 0 0 12 .5Z"/></svg>
+              GitHub
+            </a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/harryson-montesdeoca" target="_blank" rel="noopener noreferrer" data-i18n-aria="contact.linkedinAria" aria-label="LinkedIn, se abre en una pestaña nueva">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5ZM3.5 9h3V21h-3V9ZM9.5 9h2.9v1.6h.1c.4-.8 1.4-1.7 3-1.7 3.2 0 3.8 2.1 3.8 4.8V21h-3v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21h-3V9Z"/></svg>
+              LinkedIn
+            </a>
+            <a class="btn btn-primary" href="/cv/Harryson-Montesdeoca-CV.pdf" download="Harryson-Montesdeoca-CV.pdf">
+              <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M10 3v10M6 9l4 4 4-4M4 16h12"/></svg>
+              <span data-i18n="hero.secondary">Descargar CV</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-bar">
+      <p>© <span id="year">2026</span> <span data-i18n="footer.copy">Harryson Ariel Montesdeoca Rhea · Quito, Ecuador</span></p>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
+        <a href="#servicios" data-i18n="nav.services">Servicios</a>
+        <a href="#stack" data-i18n="nav.stack">Stack</a>
+        <a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
+        <a href="#formacion" data-i18n="footer.formacion">Formación</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+        <a class="to-top" href="#top" data-i18n="footer.top">Volver arriba</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>
